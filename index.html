@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get the best prices for Netflix, Shahid, and Crunchyroll subscriptions at Rayan Hosni Store. Sign up for affordable streaming services!">
+    <meta name="keywords" content="Netflix, Shahid, Crunchyroll, subscriptions, affordable prices, streaming services">
+    <meta name="author" content="Rayan Hosni">
+    <title>Rayan Hosni Store - Premium Subscription Accounts</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Minification -->
+    <link rel="stylesheet" href="styles.min.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .price {
+            font-size: 24px;
+            color: green;
+        }
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            color: #00aced;
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+        
+        /* Lazy loading images */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Fade in animation */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating action button for quick contact */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .fab:hover {
+            background-color: #555;
+        }
+
+        /* Light and dark mode toggle */
+        .toggle-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .toggle-switch:hover {
+            background-color: #555;
+        }
+        .dark-mode {
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+        }
+
+        /* Contact section styles */
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .contact-options a {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .contact-options a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rayan Hosni Store</h1>
+        <p>Your one-stop shop for premium Netflix, Shahid, and Crunchyroll accounts at the best prices.</p>
+        <div class="toggle-switch" onclick="toggleDarkMode()">Toggle Dark Mode</div>
+    </header>
+
+    <div class="container">
+        <div class="card fade-in">
+            <h2>Netflix Account</h2>
+            <p>Subscribe for one month</p>
+            <p class="price">10 TND per month</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="card fade-in">
+            <h2>Shahid Account</h2>
+            <p>Subscribe for one month</p>
+            <p class="price">5 TND per month</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="card fade-in">
+            <h2>Crunchyroll Account</h2>
+            <p>Subscribe for one year</p>
+            <p class="price">5 TND per year</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <a href="https://www.instagram.com/b13negahh2" target="_blank">Contact via Instagram</a>
+        <a href="https://m.me/ch/AbaVXkT2Q-f-NqwP/" target="_blank">Contact via Facebook Messenger</a>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+        <form action="/submit_form" method="POST">
+
+    </section>
+
+    <footer>
+        <p>Contact us for more information or to make a purchase.</p>
+        <div class="social-icons">
+            <a href="https://m.me/ch/AbaVXkT2Q-f-NqwP/" target="_blank">Facebook</a>
+        </div>
+        <p>© 2024 Rayan Hosni Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button class="fab" onclick="window.location.href='https://m.me/ch/AbaVXkT2Q-f-NqwP/'">Contact Us</button>
+
+    <!-- Facebook Messenger Plugin -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"></script>
+    <div class="fb-customerchat" attribution="setup_tool" page_id="YOUR_PAGE_ID"></div>
+
+    <script>
+        // Trigger fade-in animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => card.classList.add('fade-in'));
+        });
+
+        // Toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
